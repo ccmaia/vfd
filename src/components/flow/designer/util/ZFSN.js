@@ -3,11 +3,7 @@ import { flowConfig } from '../config/args-config.js'
 export let ZFSN = {
 	seqNo: 1,
 	consoleLog: function(strArr) {
-		let log = '';
-		for (let i = 0, len = strArr.length; i < len; i++) {
-			log += strArr[i] + '\n';
-		}
-		console.log('%c' + log, 'color: red; font-weight: bold;');
+		
 	},
 	getId: function() {
 		let idType = flowConfig.idType;
